@@ -7,11 +7,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
+    //idは#、classは.
+    $("#button").on("click", function () {
+      // console.log("k丸亀清磨園");
+      $(this).css({position:"absolute",top:0});
+      $(this).animate({top:"400px",left:"500px"},2000);
+    });
   });
   </script>
 </head>
 <body>
-  <div id="button">
+  <div id="button" >
     <p>button</p>
   </div><!-- button -->
 </body>
