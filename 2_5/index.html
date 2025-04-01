@@ -5,8 +5,22 @@
   <title>if文</title>
   <link rel="stylesheet" type="text/css" href="base.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
-  $(function(){
+  $(function() {
     // ここに処理を記述
+    $("#button").on("click", function () {  //これ書き忘れてたからボタン反応しなかった
+    const value = $("#value").val();  //ifの条件式用に定義する必要があった
+
+    if (value === "1") { 
+      $("#box").css("background-color", "red");
+    } else if(value === "2"){
+      $("#box").css("background-color", "green");
+    } else if(value === "3"){
+      $("#box").css("background-color", "blue"); 
+    } else {
+      $("#box").css("background-color", "#aaa");
+    }
+
+  });
   });
   </script>
 </head>
