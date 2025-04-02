@@ -10,13 +10,11 @@
     //onメソッドで複数のイベントに使えるようになる
     //.を付け忘れて詰まった
     $(".button").on("click", function () {
-      // ここで全部をいったん#fddにする
-    $(".button").css("background-color", "#fdd");
-    // 指定した要素の背景色を変更
-    //this使うまではよかったが、"this"のようにダブルクォーテーションつけてて止まってた
-    $(this).css("background-color", "red");
+      $(".button").css("background-color", "#fdd");// ここで全部をいったん#fddにする
+      $(this).css("background-color", "red");//this使うまではよかったが、"this"のようにダブルクォーテーションつけてて止まってた
     });
   });
+
   </script>
 </head>
 <body>
