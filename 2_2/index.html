@@ -7,8 +7,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
     // ここに処理を記述
-    
+    //onメソッドで複数のイベントに使えるようになる
+    //.を付け忘れて詰まった
+    $(".button").on("click", function () {
+      $(".button").css("background-color", "#fdd");// ここで全部をいったん#fddにする
+      $(this).css("background-color", "red");//this使うまではよかったが、"this"のようにダブルクォーテーションつけてて止まってた
+    });
   });
+
   </script>
 </head>
 <body>
